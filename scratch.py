@@ -22,7 +22,7 @@ def letter_list(word):
 if __name__ == '__main__':
 
     phrase_list = open('text_files/countries').readlines()
-    f_large = open('practice_words')
+    f_large = open('text_files/practice_words')
     new_f = open('text_files/countries_formatted', 'w')
     s = set()
     s.update(f_large.readlines())

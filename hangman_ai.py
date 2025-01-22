@@ -99,7 +99,7 @@ class HangmanAI:
         return phrase_decoded
 
     def create_training_data(self):
-        f = open('practice_words', 'w')
+        f = open('text_files/practice_words', 'w')
 
         # create list of individual words
         old_file = open(self.training_file)
@@ -119,7 +119,7 @@ class HangmanAI:
                 self.new_words.update_data_table(word)
                 f.write(f'{word}\n')
 
-        word_list = open('practice_words').readlines()
+        word_list = open('text_files/practice_words').readlines()
         hangman_engine = HangmanEngine('practice_words')
 
         # desired_length = 30000
